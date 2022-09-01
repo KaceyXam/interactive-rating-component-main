@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 5%);
+}
+
+.text-center {
+    text-align: center;
+    align-items: center;
+    /* This is possibly the worst css I have ever wrote */
+}
+
+.icon {
+    padding: 1.5rem;
+    border-radius: 100vh;
+    width: min-content;
+    height: min-content;
+    background-color: hsl(213, 19%, 18%);
+}
+
+.icon svg {
+    scale: 1.5;
+}
+
+.rating-box {
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    aspect-ratio: 1 / 1;
+    color: hsl(0, 0%, 100%);
+    background: hsl(216, 12%, 8%);
+}
+
+.rating-box h1 {
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+}
+
+.test {
+    background-color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+#options {
+    display: flex;
+    justify-content: space-between;
+}
+
+:where(#options button) {
+    background-color: hsl(213, 19%, 18%);
+    border: none;
+    height: 3rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 100vh;
+    font-size: 1.1rem;
+    color: hsl(216, 12%, 54%);
+    transition: 75ms ease-out;
+}
+
+:where(#options button:hover) {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+
+.active {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.submit {
+    margin-inline: 1rem;
+    border: none;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 100vh;
+    letter-spacing: 4px;
+    transition: 75ms ease-in-out;
+}
+
+.active:hover {
+    background-color: hsl(25, 97%, 57%)
+}
+
+.submit:hover {
+    background-color: hsl(25, 97%, 57%)
+}
+
+#error {
+    color: red
+}
+
+#result-text {
+    border-radius: 100vh;
+    background-color: hsl(213, 19%, 18%);
+    padding: .5rem 1rem;
+    width: max-content;
+    color: hsl(25, 97%, 53%);
+}
+
+#result h2 {
+    margin-bottom: 0;
+}
