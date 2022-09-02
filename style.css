@@ -87,6 +87,7 @@ p {
 .active {
     background-color: hsl(25, 97%, 53%);
     color: white;
+    font-weight: 700;
 }
 
 .submit {
@@ -99,6 +100,7 @@ p {
     border-radius: 100vh;
     letter-spacing: 4px;
     transition: 75ms ease-in-out;
+    font-weight: 700;
 }
 
 .active:hover {
@@ -110,7 +112,8 @@ p {
 }
 
 #error {
-    color: red
+    color: red;
+    text-align: center;
 }
 
 #result-text {
