@@ -99,7 +99,6 @@ body {
 .active {
     background-color: hsl(25, 97%, 53%);
     color: white;
-    font-weight: 700;
 }
 
 .submit {
