@@ -1,7 +1,6 @@
 const ratingForm = document.querySelector("#rating")
 const scoreOptions = ratingForm.querySelector('#options')
 const scoreButtons = scoreOptions.querySelectorAll('button[type="button"]')
-const errorText = ratingForm.querySelector("#error")
 const resultSection = document.querySelector("#result")
 const resultTitle = resultSection.querySelector("#result-text")
 
@@ -22,11 +21,10 @@ ratingForm.addEventListener("submit", e => {
     e.preventDefault()
 
     if (!selectedScore) {
-        errorText.innerHTML = "You need to select a rating"
         return
     };
 
-    let output = `You chose ${selectedScore} out of 5`
+    let output = `You selected ${selectedScore} out of 5`
 
     ratingForm.classList.add("hidden")
     resultSection.classList.remove("hidden")
